@@ -125,6 +125,11 @@ Page({
       nameZN: '信息状态',
       path: '/message/demo/index',
     },
+    {
+      name: 'Collapse',
+      nameZN: '折叠面板',
+      path: '/collapse/demo/index',
+    },
     ],
   },
 });
