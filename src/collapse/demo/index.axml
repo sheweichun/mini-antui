@@ -1,0 +1,12 @@
+<view a:for="{{collapseData}}">
+  <collapse
+    onChange="onChange"
+    title="{{item.title}}"
+    showArrow="{{item.showArrow}}"
+    isActive="{{item.isActive}}"
+  >
+    <view a:for="{{item.contentItems}}" a:for-item="contentItem" class="container-content">
+      <view>{{contentItem}}</view>
+    </view>
+  </collapse>
+</view>

@@ -1,0 +1,21 @@
+<view
+  class="am-collapse {{className}} {{isOpen ? activeClass : ''}} {{disabled ? 'am-collapse--disabled' : ''}}"
+  key="{{id}}"
+>
+  <view
+    class="am-collapse-title {{titleClass}}"
+    onTap="onCollapseTap"
+    data-id="{{id}}"
+    data-title="{{title}}"
+    data-isActive="{{isOpen}}"
+  >
+    <text>{{title}}</text>
+    <view
+      a:if="{{showArrow}}"
+      class="am-collapse-title-arrow {{`arrow--${isOpen ? 'down' : 'right'}`}}"
+    />
+  </view>
+  <view class="am-collapse-content {{contentClass}}" style="max-height: {{isOpen ? '100000rpx' : 0}};">
+    <slot></slot>
+  </view>
+</view>

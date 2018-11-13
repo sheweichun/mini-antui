@@ -1,9 +1,0 @@
-<view class="am-collapse-panel-wrap" key="collapse-panel-{{key}}" onTap="onPanelTap">
-  <view class="am-collapse-panel-header {{isActive ? am-collapse-panel-header--active : ''}}">
-    <text>{{header}}</text>
-    <view class="am-collapse-panel-header-arrow" />
-  </view>
-  <view class="am-collapse-panel-content {{isActive ? am-collapse-panel-content--active : ''}}">
-    <slot></slot>
-  </view>
-</view>
