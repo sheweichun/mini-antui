@@ -1,6 +1,5 @@
 {
   "pages": [
-    "collapse/demo/index",
     "list/demo/app",
     "list/demo/index",
     "amount-input/demo/index",
@@ -44,6 +43,7 @@
     "page-result/demo/empty/index",
     "page-result/demo/local-empty/index",
     "popup/demo/index",
+    "collapse/demo/index",
     "message/demo/index",
     "message/demo/success/index",
     "message/demo/fail/index",
