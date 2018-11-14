@@ -1,0 +1,18 @@
+<view class="am-pagination__pages">
+  <block a:if="{{mode === 'basic'}}">
+    <view
+      a:for="{{pages}}"
+      class="am-pages__item {{item.isActive ? 'am-pages__item--active' : ''}}"
+      data-type="{{item.type}}"
+      data-index="{{item.index}}"
+      onTap="onPageTap"
+    >
+      {{item.text}}
+    </view>
+  </block>
+  <block a:if="{{mode === 'simple'}}">
+    <view class="am-pages__item--simple">
+      {{`${activeIndex}/${totalNum}`}}
+    </view>
+  </block>
+</view>

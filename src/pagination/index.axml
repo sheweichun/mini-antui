@@ -1,0 +1,23 @@
+<view>
+  <view class="am-pagination">
+    <view
+      class="am-pagination__item {{activeIndex === 1 ? 'item--disabled' : ''}}"
+      onTap="onPrevTap"
+    >
+      {{prevText}}
+    </view>
+    <pages
+      onPageTap="onPageTap"
+      pages="{{pages}}"
+      totalNum="{{totalNum}}"
+      activeIndex="{{activeIndex}}"
+      mode="{{mode}}"
+    />
+    <view
+      class="am-pagination__item {{activeIndex === totalNum ? 'item--disabled' : ''}}"
+      onTap="onNextTap"
+    >
+      {{nextText}}
+    </view>
+  </view>
+</view>

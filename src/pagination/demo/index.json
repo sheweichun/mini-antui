@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "分页",
+  "usingComponents":{
+    "pagination": "../index"
+  }
+}

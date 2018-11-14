@@ -1,0 +1,23 @@
+.am-pagination {
+  display: flex;
+  font-size: 35rpx;
+  text-align: center;
+  background-color: #fff;
+  border: 0.5px solid #e5e5e5;
+}
+
+.am-pagination__item {
+  color: #38f;
+  flex-basis: 60px;
+  padding: 5px 0px;
+}
+
+.am-pagination__item.item--disabled {
+  color: #888;
+  background-color: #e5e5e5;
+}
+
+.am-pagination__pages {
+  flex: 1;
+  display: flex;
+}

@@ -1,0 +1,38 @@
+<view>
+  <view style="text-align: center; padding: 5px 0px;">
+    <text>Demo of pagination</text>
+  </view>
+  <view style="margin-top: 20px;">
+    <pagination
+      totalItems="{{totalItems}}"
+      pageSize="{{pageSize}}"
+      maxPageToShow="{{maxPageToShow}}"
+    />  
+  </view>
+  <view style="margin-top: 30px;">
+    <pagination
+      totalItems="{{totalItems}}"
+      pageSize="{{pageSize}}" 
+      maxPageToShow="{{maxPageToShow}}"
+      currentIndex="{{currentIndex}}"
+      showEllipses="true"
+    />  
+  </view>  
+  <view style="margin-top: 30px;">
+    <pagination
+      totalItems="{{totalItems}}"
+      pageSize="{{pageSize}}"
+      maxPageToShow="{{maxPageToShow}}"
+      showEllipses="true"
+    />
+  </view>
+  <view style="margin-top: 30px;">
+    <pagination
+      totalItems="{{totalItems}}"
+      pageSize="{{pageSize}}"
+      maxPageToShow="{{maxPageToShow}}"
+      showEllipses="true"
+      mode="simple"
+    />
+  </view>
+</view>

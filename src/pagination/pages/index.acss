@@ -1,0 +1,22 @@
+.am-pages__item {
+  flex: 1;
+  color: #38f;
+  padding: 5px 0px;
+  border-right: 0.5px solid #e5e5e5;
+}
+
+.am-pages__item:first-child {
+  border-left: 0.5px solid #e5e5e5;
+}
+
+.am-pages__item.am-pages__item--active {
+  color: #fff;
+  background-color: #38f;
+}
+
+.am-pages__item--simple {
+  flex: 1;
+  padding: 5px 0px;
+  border-left: 0.5px solid #e5e5e5;
+  border-right: 0.5px solid #e5e5e5;
+}

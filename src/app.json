@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pagination/demo/index",
     "list/demo/app",
     "list/demo/index",
     "amount-input/demo/index",
