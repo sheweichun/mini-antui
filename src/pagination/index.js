@@ -1,3 +1,4 @@
+const noop = () => {};
 const ellipsesItem = {
   type: 'ellipses',
   index: '',
@@ -20,11 +21,12 @@ Component({
     prevText: 'Prev',
     totalItems: 0, // total number of items
     pageSize: 5, // number of items that are shown each page
+    maxPageToShow: 0,
     showEllipses: false, // whether show ellipses items
     currentIndex: 1, // index of current page
-    onPrevTap: () => {},
-    onNextTap: () => {},
-    onPageTap: () => {}
+    onPrevTap: noop,
+    onNextTap: noop,
+    onPageTap: noop
   },
 
   didMount() {
@@ -32,7 +34,7 @@ Component({
   },
   
   methods: {
-    onPrevTap(evt) {
+    onPrevTap() {
       const { activeIndex } = this.data;
       if (activeIndex > 1) {
         this.setData({ activeIndex: activeIndex - 1 });
@@ -70,7 +72,7 @@ Component({
     initData() {
       const { totalItems, pageSize, maxPageToShow, currentIndex, mode } = this.props;
       const totalNum = Math.ceil(totalItems / pageSize);
-      // if maxPageToShow is not valid then use total number as max page number to show
+      // if maxPageToShow is invalid then use total number as max page number to show
       const maxPageNum = (maxPageToShow > 0 && maxPageToShow < totalNum) ? maxPageToShow : totalNum;
       const prevPageNum = Math.floor(maxPageNum / 2);
       const totalPages = []; // total pages array used to slice pages array
@@ -97,6 +99,7 @@ Component({
         beginPage = 1;
         endPage = maxPageNum;
       }
+      
       if (endPage > totalNum) {
         endPage = totalNum;
         beginPage = endPage - maxPageNum + 1;
