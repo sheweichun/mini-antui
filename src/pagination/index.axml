@@ -1,5 +1,5 @@
 <view>
-  <view class="am-pagination">
+  <view class="am-pagination {{className}}">
     <view
       class="am-pagination__item {{activeIndex === 1 ? 'item--disabled' : ''}}"
       onTap="onPrevTap"
