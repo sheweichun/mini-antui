@@ -48,7 +48,8 @@
     "message/demo/fail/index",
     "message/demo/info/index",
     "message/demo/waiting/index",
-    "message/demo/warn/index"
+    "message/demo/warn/index",
+    "layout/demo/index"
   ],
   "window": {
     "enableWK": "YES",

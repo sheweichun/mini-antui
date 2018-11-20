@@ -1,0 +1,3 @@
+<view class="am-col {{className}} {{`am-col--${span} am-col--offset-${offset}`}}" style="{{style}}">
+  <slot />
+</view>

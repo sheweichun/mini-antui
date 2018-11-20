@@ -1,0 +1,3 @@
+<view class="am-row {{className}}" style="{{style}}">
+  <slot />
+</view>

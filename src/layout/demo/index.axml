@@ -1,0 +1,15 @@
+<view class="container">
+  <row a:for="{{demoData}}">
+    <col
+      a:for="{{item}}"
+      a:for-item="itemData"
+      span="{{itemData.span}}"
+      offset="{{itemData.offset}}"
+      style="margin-top: 10px;"
+    >
+      <view style="{{`${itemData.style} padding: 10px 0px;`}}">
+        {{itemData.content}}
+      </view>
+    </col>
+  </row>
+</view>

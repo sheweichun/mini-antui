@@ -125,6 +125,11 @@ Page({
       nameZN: '信息状态',
       path: '/message/demo/index',
     },
+    {
+      name: 'Layout',
+      nameZN: '布局',
+      path: '/layout/demo/index',
+    },
     ],
   },
 });
