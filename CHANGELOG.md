@@ -1,3 +1,26 @@
+## 0.4.5
+
+`2018-11-21`
+
+- **Enhancement**
+  - `popup`新增参数`zIndex`，用来指定组件层级
+
+## 0.4.4
+
+`2018-11-15`
+
+- **Enhancement**
+  - `notice`的mode参数为`link`时，onClick回调的触发区域为完整组件。
+
+## 0.4.3
+
+`2018-11-07`
+
+- **Enhancement**
+  - `tabs`新增`tabBarCls`tabBar自定义样式class
+  - `tabs`新增`duration`控制滑动动画时长
+  - `calendar`date参数兼容IOS格式要求
+
 ## 0.4.2
 
 `2018-10-31`
